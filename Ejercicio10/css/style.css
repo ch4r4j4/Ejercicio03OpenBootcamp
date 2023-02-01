@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navegador{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(74, 86, 139);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main{
+    flex-grow: 0.6;
+    display: flex;
+    padding: 5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    padding: 0.8rem 1.7rem;
+    color: white;
+    font-weight: 500;
+}
+
+.boton:hover{
+    opacity: 0.6;
+    background-color: rgb(41, 54, 95);
+    border-style: 1px solid ;
+    box-shadow: 0 0 2px rgb(153, 188, 221);
+}
+
+@media(max-width:570px){
+    body{
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+    .navegador{
+        flex-direction: row;
+    }
+}
